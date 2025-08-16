@@ -1,0 +1,251 @@
+/* ARISTOTLE CSS V1.0.0 by @VihaanVinoth */
+
+:root {
+    --sans-serif-fonts: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+    --marked: #e7ef00;
+    --disabled: #e3e3e3;
+    --accent: #000b9e;
+    --accent-header: #000b9e2f;
+    --accent-hover: #004de6;
+    --border-radius: 3px;
+    --kbd-padding: 0.4rem 1rem;
+    --button-padding: 0.6rem 1rem;
+    --primary: var(--accent);
+    --primary-border: 1px solid var(--accent-hover);
+    --secondary: #a4a4a4;
+    --secondary-border: 1px solid #505050;
+    --success: #007d1b;
+    --success-border: 1px solid #003d0d;
+    --danger: #ae0000;
+    --danger-border: 1px solid #3c0000;
+    --warning: var(--marked);
+    --warning-border: 1px solid #6e7600;
+    --root-margin: 10px;
+    --header-margin-dt: calc(var(--root-margin) * -2);
+    --header-margin-b: calc(var(--root-margin) * 2);
+}
+
+/* Initialization */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, * {
+    font-family: var(--sans-serif-fonts);
+    scroll-behavior: smooth;
+}
+
+textarea, select, input, progress {
+    appearance: none;
+}
+
+/* Color Variables */
+
+.primary {
+    background-color: var(--primary) !important;
+    border: var(--primary-border) !important;
+    color: white !important;
+}
+
+.secondary {
+    background-color: var(--secondary) !important;
+    border: var(--secondary-border) !important;
+    color: black !important;
+}
+
+.success {
+    background-color: var(--success) !important;
+    border: var(--success-border) !important;
+    color: white !important;
+}
+
+.danger {
+    background-color: var(--danger) !important;
+    border: var(--danger-border) !important;
+    color: white !important;
+}
+
+.warning {
+    background-color: var(--warning) !important;
+    border: var(--warning-border) !important;
+    color: black !important;
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Helvetica Neue', sans-serif, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.85rem;
+}
+
+/* Buttons, KBD, Code, Marks, Anchors */
+
+button, a, kbd, code, mark {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+button, a {
+    font-family: var(--sans-serif-fonts);
+}
+
+button {
+    background-color: var(--accent);
+    border-width: 0;
+    color: white;
+    padding: var(--button-padding);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent-hover)
+}
+
+kbd {
+    padding: var(--kbd-padding);
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background-color: var(--accent);
+    color: white;
+    opacity: 1;
+    width: auto;
+}
+
+mark {
+    background-color: var(--marked);
+    padding: 0.3rem 0.5rem;
+}
+
+code {
+    border: 1px solid rgb(195, 195, 195);
+    padding: 0.3rem 0.5rem;
+    border-radius: var(--border-radius);
+    background-color: gainsboro;
+    color: rgb(92, 92, 92);
+}
+
+kbd, code {
+    font-family: monospace;
+}
+
+/* Blockquote */
+
+blockquote {
+    border-left: 5px solid var(--accent);
+    padding: 14px 16px;
+    margin-left: 40px !important;
+}
+
+blockquote > p {
+    font-style: italic;
+}
+
+blockquote > p:nth-child(1)::before, blockquote > p:nth-child(1)::after {
+    content: '"'
+}
+
+blockquote > cite {
+    font-style: none;
+}
+
+/* Notice Box */
+
+.notice {
+    padding: 10px;
+    width: auto;
+}
+
+.notice:hover, kbd:hover {
+    cursor:help;
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid gray;
+}
+
+td, th {
+    padding: 5px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+/* Details & Summary */
+
+details {
+    border: var(--primary-border);
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+details:open > summary {
+    border-bottom: var(--primary-border);
+}
+
+details > summary, details > p {
+    padding: 15px;
+}
+
+/* Header/Footer */
+
+*:not(header > *) {
+    margin: var(--root-margin);
+}
+
+header {
+    border-bottom: var(--primary-border);
+    background-color: var(--accent-header);
+    padding:14px 50px;
+    margin: 5px var(--header-margin-dt);
+    margin-bottom: var(--header-margin-b);
+    margin-top: var(--header-margin-dt);
+}
+
+/* Navbar */
+
+
