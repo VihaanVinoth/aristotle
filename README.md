@@ -38,6 +38,14 @@ mv aristotle.css [YOUR/FILE/PATH] (or simply drag into your folder)
 
 ## Example
 
+<div align="center">
+  <img src="example.svg">
+  <p class="notice primary">
+        <span>💡</span>
+        Hello! I'm a notice box; used to inform...
+  </p>
+</div>
+
 ## Extras
 If you want, you can also link your ```style.css```, but in reference to ```aristotle.css```, type ```!important``` next to the CSS property, like this:
 
