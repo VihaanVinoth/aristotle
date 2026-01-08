@@ -38,12 +38,8 @@ mv aristotle.css [YOUR/FILE/PATH] (or simply drag into your folder)
 
 ## Example
 
-<div align="center">
-  <img src="example.svg">
-  <p class="notice primary">
-        <span>💡</span>
-        Hello! I'm a notice box; used to inform...
-  </p>
+<div style="width: 100%;">
+  <img src="example.svg" style="width: 100%">
 </div>
 
 ## Extras
