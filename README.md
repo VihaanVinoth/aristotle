@@ -39,8 +39,9 @@ mv aristotle.css [YOUR/FILE/PATH] (or simply drag into your folder)
 ## Example
 
 <div style="width: 100%;">
-  <img src="example.svg" style="width: 100%">
+  <img src="example-img.svg" style="width: 100%">
 </div>
+![example-img](https://github.com/user-attachments/assets/19eb060a-1c19-462b-b6ea-1369bb0c2c2d)
 
 ## Extras
 If you want, you can also link your ```style.css```, but in reference to ```aristotle.css```, type ```!important``` next to the CSS property, like this:
