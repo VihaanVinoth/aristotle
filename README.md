@@ -38,10 +38,7 @@ mv aristotle.css [YOUR/FILE/PATH] (or simply drag into your folder)
 
 ## Example
 
-<div style="width: 100%;">
-  <img src="example-img.svg" style="width: 100%">
-</div>
-![example-img](https://github.com/user-attachments/assets/19eb060a-1c19-462b-b6ea-1369bb0c2c2d)
+<img style="-webkit-user-drag: none;" draggable="false" width="629" height="307" alt="Screenshot 2026-01-08 at 11 44 30 AM" src="https://github.com/user-attachments/assets/6ce2f26c-6bb5-478f-8887-64e574bad46d" />
 
 ## Extras
 If you want, you can also link your ```style.css```, but in reference to ```aristotle.css```, type ```!important``` next to the CSS property, like this:
